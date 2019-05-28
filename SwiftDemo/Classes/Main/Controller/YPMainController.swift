@@ -15,6 +15,21 @@ class YPMainController: UIViewController {
 
         self.navigationItem.title = "首页"
         // Do any additional setup after loading the view.
+        
+        YPHttpClientTool.sharedInstance.GET(url: "", params: ["positionId": 101], success: { (responseData : Dictionary<String, Any>) in
+            
+            let code    : Int    = responseData["errorCode"] as! Int
+            let message : String = responseData["message"] as! String
+            let result  : Array<Any>  = responseData["result"] as! Array<Any>
+
+            if code == 200 {
+                print(result , message)
+            } else {
+                print(message)
+            }
+        }) { (error : Error) in
+            print(error)
+        }
     }
     
 

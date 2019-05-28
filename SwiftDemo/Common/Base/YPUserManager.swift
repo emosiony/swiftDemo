@@ -9,8 +9,6 @@
 import UIKit
 import Onboard
 
-let instance = YPUserManager()
-
 class YPUserManager: NSObject {
     
     static let sharedInstance = YPUserManager()

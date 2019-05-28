@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2FAD50D95E8D97258B38C5DE /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9DA66925ACCBDE55E4903D /* Pods_SwiftDemo.framework */; };
+		633FC60B229D02B600019B16 /* YPHttpClientTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633FC60A229D02B600019B16 /* YPHttpClientTool.swift */; };
 		638A015A229289E30095FB27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A0159229289E30095FB27 /* AppDelegate.swift */; };
 		638A0161229289E50095FB27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638A0160229289E50095FB27 /* Assets.xcassets */; };
 		638A016F229289E50095FB27 /* SwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A016E229289E50095FB27 /* SwiftDemoTests.swift */; };
@@ -42,6 +43,7 @@
 		34DC79054D5EC51A94ACCDC5 /* Pods-SwiftDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemoUITests/Pods-SwiftDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		47C75E3DF30C335D621EDC23 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5E9DA66925ACCBDE55E4903D /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		633FC60A229D02B600019B16 /* YPHttpClientTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPHttpClientTool.swift; sourceTree = "<group>"; };
 		638A0156229289E30095FB27 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638A0159229289E30095FB27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		638A0160229289E50095FB27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,6 +116,29 @@
 				6B41B6C53C5CBFA970C19C85 /* Pods_SwiftDemoUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		633FC605229D024A00019B16 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				633FC606229D025A00019B16 /* NetManager */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		633FC606229D025A00019B16 /* NetManager */ = {
+			isa = PBXGroup;
+			children = (
+				633FC60A229D02B600019B16 /* YPHttpClientTool.swift */,
+			);
+			path = NetManager;
+			sourceTree = "<group>";
+		};
+		633FC60C229D33D200019B16 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		638A014D229289E30095FB27 = {
@@ -197,6 +222,8 @@
 		638A018A22928A7D0095FB27 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				633FC60C229D33D200019B16 /* Category */,
+				633FC605229D024A00019B16 /* Tools */,
 				63FC261A229292CC0015556C /* Const */,
 			);
 			path = Expand;
@@ -356,6 +383,7 @@
 				TargetAttributes = {
 					638A0155229289E30095FB27 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					638A0169229289E50095FB27 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -514,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63FC261C229292DF0015556C /* YPConst.swift in Sources */,
+				633FC60B229D02B600019B16 /* YPHttpClientTool.swift in Sources */,
 				63FC26222292A9D60015556C /* YPLoginController.swift in Sources */,
 				638A015A229289E30095FB27 /* AppDelegate.swift in Sources */,
 				638A019322928BE90095FB27 /* YPMainController.swift in Sources */,
@@ -675,6 +704,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T734GGWG37;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftDemo/SupportingFile/Info.plist";
@@ -685,6 +715,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jzg.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -696,6 +727,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T734GGWG37;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftDemo/SupportingFile/Info.plist";
