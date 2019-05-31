@@ -87,7 +87,7 @@ class YPUserManager: NSObject {
             find.tabBarItem.selectedImage = selectimages[2]
             
             
-            let mine : UINavigationController  = UINavigationController.init(rootViewController: YPMainController());
+            let mine : UINavigationController  = UINavigationController.init(rootViewController: YPMineViewController());
             mine.tabBarItem.title = titles[3]
             mine.tabBarItem.image = images[3]
             mine.tabBarItem.selectedImage = selectimages[3]
