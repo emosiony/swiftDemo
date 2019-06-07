@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2FAD50D95E8D97258B38C5DE /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9DA66925ACCBDE55E4903D /* Pods_SwiftDemo.framework */; };
 		519BF82C22A19DD4009A3516 /* YPMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519BF82B22A19DD4009A3516 /* YPMineViewController.swift */; };
+		51D0933222A2CB8C0026EE41 /* YPFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D0933122A2CB8C0026EE41 /* YPFriendViewController.swift */; };
+		51D0933522A2D5800026EE41 /* YPReachabilityTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D0933422A2D5800026EE41 /* YPReachabilityTool.swift */; };
 		633FC60B229D02B600019B16 /* YPHttpClientTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633FC60A229D02B600019B16 /* YPHttpClientTool.swift */; };
 		638A015A229289E30095FB27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A0159229289E30095FB27 /* AppDelegate.swift */; };
 		638A0161229289E50095FB27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638A0160229289E50095FB27 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		34DC79054D5EC51A94ACCDC5 /* Pods-SwiftDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemoUITests/Pods-SwiftDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		47C75E3DF30C335D621EDC23 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		519BF82B22A19DD4009A3516 /* YPMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPMineViewController.swift; sourceTree = "<group>"; };
+		51D0933122A2CB8C0026EE41 /* YPFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPFriendViewController.swift; sourceTree = "<group>"; };
+		51D0933422A2D5800026EE41 /* YPReachabilityTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPReachabilityTool.swift; sourceTree = "<group>"; };
 		5E9DA66925ACCBDE55E4903D /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		633FC60A229D02B600019B16 /* YPHttpClientTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPHttpClientTool.swift; sourceTree = "<group>"; };
 		638A0156229289E30095FB27 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +124,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		516E9E8522A2CB2F00E655F2 /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				51D0933122A2CB8C0026EE41 /* YPFriendViewController.swift */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
 		519BF82A22A19DA9009A3516 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,20 +140,29 @@
 			path = Mine;
 			sourceTree = "<group>";
 		};
+		51D0933322A2D50D0026EE41 /* ReachabilityTool */ = {
+			isa = PBXGroup;
+			children = (
+				51D0933422A2D5800026EE41 /* YPReachabilityTool.swift */,
+			);
+			path = ReachabilityTool;
+			sourceTree = "<group>";
+		};
 		633FC605229D024A00019B16 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				633FC606229D025A00019B16 /* NetManager */,
+				51D0933322A2D50D0026EE41 /* ReachabilityTool */,
+				633FC606229D025A00019B16 /* HttpTool */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		633FC606229D025A00019B16 /* NetManager */ = {
+		633FC606229D025A00019B16 /* HttpTool */ = {
 			isa = PBXGroup;
 			children = (
 				633FC60A229D02B600019B16 /* YPHttpClientTool.swift */,
 			);
-			path = NetManager;
+			path = HttpTool;
 			sourceTree = "<group>";
 		};
 		633FC60C229D33D200019B16 /* Category */ = {
@@ -216,6 +237,7 @@
 		638A018822928A1D0095FB27 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				516E9E8522A2CB2F00E655F2 /* Friend */,
 				519BF82A22A19DA9009A3516 /* Mine */,
 				63FC261D229298F60015556C /* Login */,
 				638A018E22928B9F0095FB27 /* Main */,
@@ -547,9 +569,11 @@
 				633FC60B229D02B600019B16 /* YPHttpClientTool.swift in Sources */,
 				63FC26222292A9D60015556C /* YPLoginController.swift in Sources */,
 				638A015A229289E30095FB27 /* AppDelegate.swift in Sources */,
+				51D0933522A2D5800026EE41 /* YPReachabilityTool.swift in Sources */,
 				638A019322928BE90095FB27 /* YPMainController.swift in Sources */,
 				63FC2619229291230015556C /* YPUserManager.swift in Sources */,
 				519BF82C22A19DD4009A3516 /* YPMineViewController.swift in Sources */,
+				51D0933222A2CB8C0026EE41 /* YPFriendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

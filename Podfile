@@ -10,7 +10,13 @@ target 'SwiftDemo' do
   pod 'Alamofire'   # 网络请求
   pod 'Onboard'     # 启动页
   pod 'SnapKit'
+  pod 'ReachabilitySwift'
+  pod 'Hue'               # 颜色 hex
+  
 #  pod 'ReactiveCocoa'    #
+#  pod 'SwiftDate'        # 日期的 转换、比较、输出
+#  pod 'Koyomi'           # 日历
+#  pod 'TextAttributes'   # AttributeString
 
   target 'SwiftDemoTests' do
     inherit! :search_paths

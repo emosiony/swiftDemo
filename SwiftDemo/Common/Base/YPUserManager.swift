@@ -76,7 +76,7 @@ class YPUserManager: NSObject {
             nav.tabBarItem.image = images[0]
             nav.tabBarItem.selectedImage = selectimages[0]
             
-            let friend : UINavigationController  = UINavigationController.init(rootViewController: YPMainController());
+            let friend : UINavigationController  = UINavigationController.init(rootViewController: YPFriendViewController());
             friend.tabBarItem.title = titles[1]
             friend.tabBarItem.image = images[1]
             friend.tabBarItem.selectedImage = selectimages[1]

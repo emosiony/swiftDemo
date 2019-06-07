@@ -12,7 +12,7 @@
 
 import UIKit
 import SnapKit
-
+import Hue
 
 
 class YPMineViewController: UIViewController,
@@ -35,21 +35,21 @@ UITableViewDelegate, UITableViewDataSource {
         lazyTableView.estimatedRowHeight  = 44.0
         lazyTableView.sectionHeaderHeight = 10
         lazyTableView.sectionFooterHeight = 0.001
-        
-        if #available(iOS 11.0, *) {
-            lazyTableView.separatorColor  = UIColor.init(named: "F3F3F3")
-        } else {
-            // Fallback on earlier versions
-            lazyTableView.separatorColor  = UIColor.init(red: 248/255.0, green: 248/255.0, blue: 248/255.0, alpha: 0.5)
-        }
+    
+        lazyTableView.separatorColor  = UIColor(hex: "#F3F3F3")
         
         return lazyTableView
     }()
+    
+    lazy var dataList : Array = Array<Any>()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationItem.title = "我的"
+                
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonItem.SystemItem.stop, target: self, action: #selector(settingClick(sender:)))
         setSubView()
     }
     
@@ -64,23 +64,26 @@ UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+    @objc func settingClick(sender: UIBarButtonItem) {
+        print(sender)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.dataList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for:indexPath)
-        cell.textLabel?.text = "llllll"
-        
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
