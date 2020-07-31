@@ -15,13 +15,13 @@ let frontNetStatus = "frontNetStatus"
 
 class YPReachabilityTool: NSObject {
     
-    let reachability = Reachability()!
+    let reachability = try! Reachability()
     
     /// 是否有网络
     var hasNet : Bool = false
     
     /// 网络状态
-    var netStatus : Reachability.Connection = Reachability.Connection.none
+    var netStatus : Reachability.Connection = Reachability.Connection.unavailable
     
     /// 是否展示 提示 在 Windows 头部提示
     var showTipOnWindow = false
@@ -88,7 +88,11 @@ class YPReachabilityTool: NSObject {
             hasNet    = true
         case .none:
             print("Network not reachable")
-            netStatus = Reachability.Connection.none
+            netStatus = Reachability.Connection.unavailable
+            hasNet    = false
+        case .unavailable:
+            print("Network not unavailable")
+            netStatus = Reachability.Connection.unavailable
             hasNet    = false
         }
         

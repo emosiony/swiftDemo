@@ -18,25 +18,34 @@ class YPFriendViewController: YPMineViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.title = "我的好友"
+        self.navigationItem.title = "三十天练习"
         
-        dataList.append("anyOne")
-        dataList.append("anyTwo")
-        dataList.append("anyThree")
-        dataList.append("anyFour")
-        dataList.append("anyFive")
-        dataList.append("anySix")
+        for num in 0...30 {
+            dataList.append("第 \(num+1) 天");
+        }
 
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonItem.SystemItem.play, target: self, action: #selector(settingClick(sender:)))
 
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = self.dataList[indexPath.row] as? String
         return cell
-        
     }
-    
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+     
+        var pushController : UIViewController = UIViewController()
+        
+        switch indexPath.row {
+        case 0:
+            pushController = YPOneDayViewController()
+        default:
+            return;
+        }
+        
+        self.navigationController?.pushViewController(pushController, animated: true)
+    }
 }
