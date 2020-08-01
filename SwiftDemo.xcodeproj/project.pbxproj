@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		0419A7BA24D44A53002CE892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0419A7B924D44A53002CE892 /* LaunchScreen.storyboard */; };
 		0419A7BE24D44E4B002CE892 /* YPOneDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419A7BD24D44E4B002CE892 /* YPOneDayViewController.swift */; };
+		04499A2724D50CF600E4E827 /* YPBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04499A2624D50CF600E4E827 /* YPBaseNavigationController.swift */; };
+		04EC17EC24D566DA00DA4EC0 /* MFJinHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04EC17E824D566D900DA4EC0 /* MFJinHei_Noncommercial-Regular.ttf */; };
+		04EC17ED24D566DA00DA4EC0 /* Gaspar Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04EC17E924D566D900DA4EC0 /* Gaspar Regular.otf */; };
+		04EC17EE24D566DA00DA4EC0 /* MFZhiHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04EC17EA24D566DA00DA4EC0 /* MFZhiHei_Noncommercial-Regular.ttf */; };
+		04EC17EF24D566DA00DA4EC0 /* MFTongXin_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04EC17EB24D566DA00DA4EC0 /* MFTongXin_Noncommercial-Regular.ttf */; };
+		04EC17F124D566FD00DA4EC0 /* YPTwoDayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC17F024D566FD00DA4EC0 /* YPTwoDayController.swift */; };
+		04EC17F324D5737200DA4EC0 /* YPThreeDayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC17F224D5737200DA4EC0 /* YPThreeDayController.swift */; };
+		04EC17F924D5744700DA4EC0 /* YPThreeDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC17F724D5744700DA4EC0 /* YPThreeDayCell.swift */; };
+		04EC17FA24D5744700DA4EC0 /* YPThreeDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EC17F824D5744700DA4EC0 /* YPThreeDayCell.xib */; };
+		04EC17FD24D5986800DA4EC0 /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04EC17FC24D5986800DA4EC0 /* emoji zone.mp4 */; };
 		2FAD50D95E8D97258B38C5DE /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9DA66925ACCBDE55E4903D /* Pods_SwiftDemo.framework */; };
 		519BF82C22A19DD4009A3516 /* YPMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519BF82B22A19DD4009A3516 /* YPMineViewController.swift */; };
 		51D0933222A2CB8C0026EE41 /* YPFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D0933122A2CB8C0026EE41 /* YPFriendViewController.swift */; };
@@ -47,6 +57,16 @@
 /* Begin PBXFileReference section */
 		0419A7B924D44A53002CE892 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0419A7BD24D44E4B002CE892 /* YPOneDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPOneDayViewController.swift; sourceTree = "<group>"; };
+		04499A2624D50CF600E4E827 /* YPBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPBaseNavigationController.swift; sourceTree = "<group>"; };
+		04EC17E824D566D900DA4EC0 /* MFJinHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFJinHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		04EC17E924D566D900DA4EC0 /* Gaspar Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaspar Regular.otf"; sourceTree = "<group>"; };
+		04EC17EA24D566DA00DA4EC0 /* MFZhiHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFZhiHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		04EC17EB24D566DA00DA4EC0 /* MFTongXin_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFTongXin_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		04EC17F024D566FD00DA4EC0 /* YPTwoDayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPTwoDayController.swift; sourceTree = "<group>"; };
+		04EC17F224D5737200DA4EC0 /* YPThreeDayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPThreeDayController.swift; sourceTree = "<group>"; };
+		04EC17F724D5744700DA4EC0 /* YPThreeDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPThreeDayCell.swift; sourceTree = "<group>"; };
+		04EC17F824D5744700DA4EC0 /* YPThreeDayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YPThreeDayCell.xib; sourceTree = "<group>"; };
+		04EC17FC24D5986800DA4EC0 /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emoji zone.mp4"; sourceTree = "<group>"; };
 		34DC79054D5EC51A94ACCDC5 /* Pods-SwiftDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemoUITests/Pods-SwiftDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		47C75E3DF30C335D621EDC23 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		519BF82B22A19DD4009A3516 /* YPMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPMineViewController.swift; sourceTree = "<group>"; };
@@ -118,9 +138,56 @@
 		0419A7BC24D44D69002CE892 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				0419A7BD24D44E4B002CE892 /* YPOneDayViewController.swift */,
+				04EC17F624D5742300DA4EC0 /* ThreeDay */,
+				04EC17F524D5741800DA4EC0 /* TwoDay */,
+				04EC17F424D5740D00DA4EC0 /* OneDay */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		04EC17E724D566C500DA4EC0 /* CustonFont */ = {
+			isa = PBXGroup;
+			children = (
+				04EC17E924D566D900DA4EC0 /* Gaspar Regular.otf */,
+				04EC17E824D566D900DA4EC0 /* MFJinHei_Noncommercial-Regular.ttf */,
+				04EC17EB24D566DA00DA4EC0 /* MFTongXin_Noncommercial-Regular.ttf */,
+				04EC17EA24D566DA00DA4EC0 /* MFZhiHei_Noncommercial-Regular.ttf */,
+			);
+			path = CustonFont;
+			sourceTree = "<group>";
+		};
+		04EC17F424D5740D00DA4EC0 /* OneDay */ = {
+			isa = PBXGroup;
+			children = (
+				0419A7BD24D44E4B002CE892 /* YPOneDayViewController.swift */,
+			);
+			path = OneDay;
+			sourceTree = "<group>";
+		};
+		04EC17F524D5741800DA4EC0 /* TwoDay */ = {
+			isa = PBXGroup;
+			children = (
+				04EC17F024D566FD00DA4EC0 /* YPTwoDayController.swift */,
+			);
+			path = TwoDay;
+			sourceTree = "<group>";
+		};
+		04EC17F624D5742300DA4EC0 /* ThreeDay */ = {
+			isa = PBXGroup;
+			children = (
+				04EC17F224D5737200DA4EC0 /* YPThreeDayController.swift */,
+				04EC17F724D5744700DA4EC0 /* YPThreeDayCell.swift */,
+				04EC17F824D5744700DA4EC0 /* YPThreeDayCell.xib */,
+			);
+			path = ThreeDay;
+			sourceTree = "<group>";
+		};
+		04EC17FB24D5984A00DA4EC0 /* MP4 */ = {
+			isa = PBXGroup;
+			children = (
+				04EC17FC24D5986800DA4EC0 /* emoji zone.mp4 */,
+			);
+			path = MP4;
 			sourceTree = "<group>";
 		};
 		0EF3D354F3A7D2D50686BC8C /* Pods */ = {
@@ -296,6 +363,8 @@
 		638A018C22928A9B0095FB27 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				04EC17E724D566C500DA4EC0 /* CustonFont */,
+				04EC17FB24D5984A00DA4EC0 /* MP4 */,
 				638A0160229289E50095FB27 /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -346,6 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				63FC2618229291230015556C /* YPUserManager.swift */,
+				04499A2624D50CF600E4E827 /* YPBaseNavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -477,7 +547,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EC17FD24D5986800DA4EC0 /* emoji zone.mp4 in Resources */,
+				04EC17EF24D566DA00DA4EC0 /* MFTongXin_Noncommercial-Regular.ttf in Resources */,
+				04EC17ED24D566DA00DA4EC0 /* Gaspar Regular.otf in Resources */,
+				04EC17FA24D5744700DA4EC0 /* YPThreeDayCell.xib in Resources */,
+				04EC17EE24D566DA00DA4EC0 /* MFZhiHei_Noncommercial-Regular.ttf in Resources */,
 				0419A7BA24D44A53002CE892 /* LaunchScreen.storyboard in Resources */,
+				04EC17EC24D566DA00DA4EC0 /* MFJinHei_Noncommercial-Regular.ttf in Resources */,
 				63FC26232292A9D60015556C /* YPLoginController.xib in Resources */,
 				638A0161229289E50095FB27 /* Assets.xcassets in Resources */,
 			);
@@ -594,11 +670,15 @@
 				633FC60B229D02B600019B16 /* YPHttpClientTool.swift in Sources */,
 				63FC26222292A9D60015556C /* YPLoginController.swift in Sources */,
 				638A015A229289E30095FB27 /* AppDelegate.swift in Sources */,
+				04EC17F124D566FD00DA4EC0 /* YPTwoDayController.swift in Sources */,
 				51D0933522A2D5800026EE41 /* YPReachabilityTool.swift in Sources */,
+				04EC17F324D5737200DA4EC0 /* YPThreeDayController.swift in Sources */,
 				638A019322928BE90095FB27 /* YPMainController.swift in Sources */,
 				63FC2619229291230015556C /* YPUserManager.swift in Sources */,
 				0419A7BE24D44E4B002CE892 /* YPOneDayViewController.swift in Sources */,
+				04499A2724D50CF600E4E827 /* YPBaseNavigationController.swift in Sources */,
 				519BF82C22A19DD4009A3516 /* YPMineViewController.swift in Sources */,
+				04EC17F924D5744700DA4EC0 /* YPThreeDayCell.swift in Sources */,
 				51D0933222A2CB8C0026EE41 /* YPFriendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

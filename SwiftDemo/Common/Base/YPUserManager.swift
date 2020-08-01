@@ -71,23 +71,23 @@ class YPUserManager: NSObject {
                                 UIImage(named: "tabbar_message_sel"), UIImage(named: "tabbar_mine_sel")]
             let titles = ["首页", "通讯录", "发现", "我的"]
             
-            let nav : UINavigationController  = UINavigationController.init(rootViewController: YPMainController());
+            let nav : YPBaseNavigationController  = YPBaseNavigationController.init(rootViewController: YPMainController());
             nav.tabBarItem.title = titles[0]
             nav.tabBarItem.image = images[0]
             nav.tabBarItem.selectedImage = selectimages[0]
             
-            let friend : UINavigationController  = UINavigationController.init(rootViewController: YPFriendViewController());
+            let friend : YPBaseNavigationController  = YPBaseNavigationController.init(rootViewController: YPFriendViewController());
             friend.tabBarItem.title = titles[1]
             friend.tabBarItem.image = images[1]
             friend.tabBarItem.selectedImage = selectimages[1]
             
-            let find : UINavigationController  = UINavigationController.init(rootViewController: YPMainController());
+            let find : YPBaseNavigationController  = YPBaseNavigationController.init(rootViewController: YPMainController());
             find.tabBarItem.title = titles[2]
             find.tabBarItem.image = images[2]
             find.tabBarItem.selectedImage = selectimages[2]
             
             
-            let mine : UINavigationController  = UINavigationController.init(rootViewController: YPMineViewController());
+            let mine : YPBaseNavigationController  = YPBaseNavigationController.init(rootViewController: YPMineViewController());
             mine.tabBarItem.title = titles[3]
             mine.tabBarItem.image = images[3]
             mine.tabBarItem.selectedImage = selectimages[3]

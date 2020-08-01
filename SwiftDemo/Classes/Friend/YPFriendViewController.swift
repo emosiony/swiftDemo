@@ -42,6 +42,10 @@ class YPFriendViewController: YPMineViewController {
         switch indexPath.row {
         case 0:
             pushController = YPOneDayViewController()
+        case 1:
+            pushController = YPTwoDayController()
+        case 2:
+            pushController = YPThreeDayController(collectionViewLayout: UICollectionViewFlowLayout())
         default:
             return;
         }
