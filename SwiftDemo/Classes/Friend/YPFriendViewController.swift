@@ -22,7 +22,9 @@ class YPFriendViewController: YPMineViewController {
         YPFourDayController(),
         YPFiveDayController(),
         YPFindLocalController(),
-        YPPullRefreshController()
+        YPPullRefreshController(),
+        YPRandomMusicController(),
+        
     ]
     
 
