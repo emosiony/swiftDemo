@@ -14,6 +14,17 @@ class YPFriendViewController: YPMineViewController {
         super.viewWillAppear(true)
         YPReachabilityTool.sharedInstance.startNetNotifier(showTipInWindow: true)
     }
+    
+    var pushViewControllers = [
+        YPOneDayViewController(),
+        YPTwoDayController(),
+        YPThreeDayController(collectionViewLayout: UICollectionViewFlowLayout()),
+        YPFourDayController(),
+        YPFiveDayController(),
+        YPFindLocalController(),
+        YPPullRefreshController()
+    ]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,19 +48,11 @@ class YPFriendViewController: YPMineViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      
-        var pushController : UIViewController = UIViewController()
-        
-        switch indexPath.row {
-        case 0:
-            pushController = YPOneDayViewController()
-        case 1:
-            pushController = YPTwoDayController()
-        case 2:
-            pushController = YPThreeDayController(collectionViewLayout: UICollectionViewFlowLayout())
-        default:
-            return;
+        if indexPath.row >= pushViewControllers.count {
+            return
         }
         
+        let pushController = pushViewControllers[indexPath.row]
         self.navigationController?.pushViewController(pushController, animated: true)
     }
 }

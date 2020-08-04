@@ -10,6 +10,8 @@
 		0419A7BA24D44A53002CE892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0419A7B924D44A53002CE892 /* LaunchScreen.storyboard */; };
 		0419A7BE24D44E4B002CE892 /* YPOneDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419A7BD24D44E4B002CE892 /* YPOneDayViewController.swift */; };
 		04499A2724D50CF600E4E827 /* YPBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04499A2624D50CF600E4E827 /* YPBaseNavigationController.swift */; };
+		04DAA11B24D7A51100A0723E /* YPFourDayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAA11A24D7A51100A0723E /* YPFourDayController.swift */; };
+		04DAA11D24D7DAB800A0723E /* YPCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAA11C24D7DAB800A0723E /* YPCameraView.swift */; };
 		04EC17EC24D566DA00DA4EC0 /* MFJinHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04EC17E824D566D900DA4EC0 /* MFJinHei_Noncommercial-Regular.ttf */; };
 		04EC17ED24D566DA00DA4EC0 /* Gaspar Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04EC17E924D566D900DA4EC0 /* Gaspar Regular.otf */; };
 		04EC17EE24D566DA00DA4EC0 /* MFZhiHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04EC17EA24D566DA00DA4EC0 /* MFZhiHei_Noncommercial-Regular.ttf */; };
@@ -19,6 +21,14 @@
 		04EC17F924D5744700DA4EC0 /* YPThreeDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC17F724D5744700DA4EC0 /* YPThreeDayCell.swift */; };
 		04EC17FA24D5744700DA4EC0 /* YPThreeDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EC17F824D5744700DA4EC0 /* YPThreeDayCell.xib */; };
 		04EC17FD24D5986800DA4EC0 /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04EC17FC24D5986800DA4EC0 /* emoji zone.mp4 */; };
+		04F86EC524D90B0B00C29B51 /* YPFiveDayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F86EC424D90B0B00C29B51 /* YPFiveDayController.swift */; };
+		04F86EC824D9108D00C29B51 /* YPFiveDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F86EC624D9108D00C29B51 /* YPFiveDayCell.swift */; };
+		04F86EC924D9108D00C29B51 /* YPFiveDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F86EC724D9108D00C29B51 /* YPFiveDayCell.xib */; };
+		04F86ECB24D92E6600C29B51 /* FiveDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F86ECA24D92E6600C29B51 /* FiveDayModel.swift */; };
+		04F86ECE24D9382F00C29B51 /* YPFindLocalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F86ECD24D9382F00C29B51 /* YPFindLocalController.swift */; };
+		04F86ED024D942E900C29B51 /* YPFindLocalController+LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F86ECF24D942E900C29B51 /* YPFindLocalController+LocationDelegate.swift */; };
+		04F86ED224D9437300C29B51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F86ED124D9437300C29B51 /* CoreLocation.framework */; };
+		04F86ED524D945A200C29B51 /* YPPullRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F86ED424D945A200C29B51 /* YPPullRefreshController.swift */; };
 		2FAD50D95E8D97258B38C5DE /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9DA66925ACCBDE55E4903D /* Pods_SwiftDemo.framework */; };
 		519BF82C22A19DD4009A3516 /* YPMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519BF82B22A19DD4009A3516 /* YPMineViewController.swift */; };
 		51D0933222A2CB8C0026EE41 /* YPFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D0933122A2CB8C0026EE41 /* YPFriendViewController.swift */; };
@@ -58,6 +68,8 @@
 		0419A7B924D44A53002CE892 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0419A7BD24D44E4B002CE892 /* YPOneDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPOneDayViewController.swift; sourceTree = "<group>"; };
 		04499A2624D50CF600E4E827 /* YPBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPBaseNavigationController.swift; sourceTree = "<group>"; };
+		04DAA11A24D7A51100A0723E /* YPFourDayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPFourDayController.swift; sourceTree = "<group>"; };
+		04DAA11C24D7DAB800A0723E /* YPCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPCameraView.swift; sourceTree = "<group>"; };
 		04EC17E824D566D900DA4EC0 /* MFJinHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFJinHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
 		04EC17E924D566D900DA4EC0 /* Gaspar Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaspar Regular.otf"; sourceTree = "<group>"; };
 		04EC17EA24D566DA00DA4EC0 /* MFZhiHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFZhiHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
@@ -67,6 +79,14 @@
 		04EC17F724D5744700DA4EC0 /* YPThreeDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPThreeDayCell.swift; sourceTree = "<group>"; };
 		04EC17F824D5744700DA4EC0 /* YPThreeDayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YPThreeDayCell.xib; sourceTree = "<group>"; };
 		04EC17FC24D5986800DA4EC0 /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emoji zone.mp4"; sourceTree = "<group>"; };
+		04F86EC424D90B0B00C29B51 /* YPFiveDayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPFiveDayController.swift; sourceTree = "<group>"; };
+		04F86EC624D9108D00C29B51 /* YPFiveDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPFiveDayCell.swift; sourceTree = "<group>"; };
+		04F86EC724D9108D00C29B51 /* YPFiveDayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YPFiveDayCell.xib; sourceTree = "<group>"; };
+		04F86ECA24D92E6600C29B51 /* FiveDayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayModel.swift; sourceTree = "<group>"; };
+		04F86ECD24D9382F00C29B51 /* YPFindLocalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPFindLocalController.swift; sourceTree = "<group>"; };
+		04F86ECF24D942E900C29B51 /* YPFindLocalController+LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YPFindLocalController+LocationDelegate.swift"; sourceTree = "<group>"; };
+		04F86ED124D9437300C29B51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		04F86ED424D945A200C29B51 /* YPPullRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPPullRefreshController.swift; sourceTree = "<group>"; };
 		34DC79054D5EC51A94ACCDC5 /* Pods-SwiftDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemoUITests/Pods-SwiftDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		47C75E3DF30C335D621EDC23 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		519BF82B22A19DD4009A3516 /* YPMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPMineViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F86ED224D9437300C29B51 /* CoreLocation.framework in Frameworks */,
 				2FAD50D95E8D97258B38C5DE /* Pods_SwiftDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,11 +159,24 @@
 		0419A7BC24D44D69002CE892 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				04F86ED324D9456E00C29B51 /* Seven */,
+				04F86ECC24D9381500C29B51 /* SixDay */,
+				04F86EC324D90AF400C29B51 /* FiveDay */,
+				04DAA11924D7A42C00A0723E /* FourDay */,
 				04EC17F624D5742300DA4EC0 /* ThreeDay */,
 				04EC17F524D5741800DA4EC0 /* TwoDay */,
 				04EC17F424D5740D00DA4EC0 /* OneDay */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		04DAA11924D7A42C00A0723E /* FourDay */ = {
+			isa = PBXGroup;
+			children = (
+				04DAA11A24D7A51100A0723E /* YPFourDayController.swift */,
+				04DAA11C24D7DAB800A0723E /* YPCameraView.swift */,
+			);
+			path = FourDay;
 			sourceTree = "<group>";
 		};
 		04EC17E724D566C500DA4EC0 /* CustonFont */ = {
@@ -190,6 +224,34 @@
 			path = MP4;
 			sourceTree = "<group>";
 		};
+		04F86EC324D90AF400C29B51 /* FiveDay */ = {
+			isa = PBXGroup;
+			children = (
+				04F86EC424D90B0B00C29B51 /* YPFiveDayController.swift */,
+				04F86EC624D9108D00C29B51 /* YPFiveDayCell.swift */,
+				04F86ECA24D92E6600C29B51 /* FiveDayModel.swift */,
+				04F86EC724D9108D00C29B51 /* YPFiveDayCell.xib */,
+			);
+			path = FiveDay;
+			sourceTree = "<group>";
+		};
+		04F86ECC24D9381500C29B51 /* SixDay */ = {
+			isa = PBXGroup;
+			children = (
+				04F86ECD24D9382F00C29B51 /* YPFindLocalController.swift */,
+				04F86ECF24D942E900C29B51 /* YPFindLocalController+LocationDelegate.swift */,
+			);
+			path = SixDay;
+			sourceTree = "<group>";
+		};
+		04F86ED324D9456E00C29B51 /* Seven */ = {
+			isa = PBXGroup;
+			children = (
+				04F86ED424D945A200C29B51 /* YPPullRefreshController.swift */,
+			);
+			path = Seven;
+			sourceTree = "<group>";
+		};
 		0EF3D354F3A7D2D50686BC8C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +268,7 @@
 		3BC2DC0D9A7B359E5547A2EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04F86ED124D9437300C29B51 /* CoreLocation.framework */,
 				5E9DA66925ACCBDE55E4903D /* Pods_SwiftDemo.framework */,
 				C72B12C35C14B92744B3DA9F /* Pods_SwiftDemoTests.framework */,
 				6B41B6C53C5CBFA970C19C85 /* Pods_SwiftDemoUITests.framework */,
@@ -554,6 +617,7 @@
 				04EC17EE24D566DA00DA4EC0 /* MFZhiHei_Noncommercial-Regular.ttf in Resources */,
 				0419A7BA24D44A53002CE892 /* LaunchScreen.storyboard in Resources */,
 				04EC17EC24D566DA00DA4EC0 /* MFJinHei_Noncommercial-Regular.ttf in Resources */,
+				04F86EC924D9108D00C29B51 /* YPFiveDayCell.xib in Resources */,
 				63FC26232292A9D60015556C /* YPLoginController.xib in Resources */,
 				638A0161229289E50095FB27 /* Assets.xcassets in Resources */,
 			);
@@ -669,17 +733,25 @@
 				63FC261C229292DF0015556C /* YPConst.swift in Sources */,
 				633FC60B229D02B600019B16 /* YPHttpClientTool.swift in Sources */,
 				63FC26222292A9D60015556C /* YPLoginController.swift in Sources */,
+				04F86EC524D90B0B00C29B51 /* YPFiveDayController.swift in Sources */,
 				638A015A229289E30095FB27 /* AppDelegate.swift in Sources */,
 				04EC17F124D566FD00DA4EC0 /* YPTwoDayController.swift in Sources */,
 				51D0933522A2D5800026EE41 /* YPReachabilityTool.swift in Sources */,
+				04F86ECE24D9382F00C29B51 /* YPFindLocalController.swift in Sources */,
 				04EC17F324D5737200DA4EC0 /* YPThreeDayController.swift in Sources */,
+				04F86ED024D942E900C29B51 /* YPFindLocalController+LocationDelegate.swift in Sources */,
 				638A019322928BE90095FB27 /* YPMainController.swift in Sources */,
+				04F86EC824D9108D00C29B51 /* YPFiveDayCell.swift in Sources */,
 				63FC2619229291230015556C /* YPUserManager.swift in Sources */,
+				04DAA11B24D7A51100A0723E /* YPFourDayController.swift in Sources */,
+				04DAA11D24D7DAB800A0723E /* YPCameraView.swift in Sources */,
+				04F86ECB24D92E6600C29B51 /* FiveDayModel.swift in Sources */,
 				0419A7BE24D44E4B002CE892 /* YPOneDayViewController.swift in Sources */,
 				04499A2724D50CF600E4E827 /* YPBaseNavigationController.swift in Sources */,
 				519BF82C22A19DD4009A3516 /* YPMineViewController.swift in Sources */,
 				04EC17F924D5744700DA4EC0 /* YPThreeDayCell.swift in Sources */,
 				51D0933222A2CB8C0026EE41 /* YPFriendViewController.swift in Sources */,
+				04F86ED524D945A200C29B51 /* YPPullRefreshController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
