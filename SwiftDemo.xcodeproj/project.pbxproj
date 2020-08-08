@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0419A7BA24D44A53002CE892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0419A7B924D44A53002CE892 /* LaunchScreen.storyboard */; };
 		0419A7BE24D44E4B002CE892 /* YPOneDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419A7BD24D44E4B002CE892 /* YPOneDayViewController.swift */; };
+		0444827224DA511E000F54B9 /* YPImageScollerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444827124DA511E000F54B9 /* YPImageScollerController.swift */; };
 		04499A2724D50CF600E4E827 /* YPBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04499A2624D50CF600E4E827 /* YPBaseNavigationController.swift */; };
 		04DAA11B24D7A51100A0723E /* YPFourDayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAA11A24D7A51100A0723E /* YPFourDayController.swift */; };
 		04DAA11D24D7DAB800A0723E /* YPCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAA11C24D7DAB800A0723E /* YPCameraView.swift */; };
@@ -69,6 +70,7 @@
 /* Begin PBXFileReference section */
 		0419A7B924D44A53002CE892 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0419A7BD24D44E4B002CE892 /* YPOneDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPOneDayViewController.swift; sourceTree = "<group>"; };
+		0444827124DA511E000F54B9 /* YPImageScollerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPImageScollerController.swift; sourceTree = "<group>"; };
 		04499A2624D50CF600E4E827 /* YPBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPBaseNavigationController.swift; sourceTree = "<group>"; };
 		04DAA11A24D7A51100A0723E /* YPFourDayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPFourDayController.swift; sourceTree = "<group>"; };
 		04DAA11C24D7DAB800A0723E /* YPCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPCameraView.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		0419A7BC24D44D69002CE892 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				0444827024DA5105000F54B9 /* NineDay */,
 				04F86ED624D9890800C29B51 /* EightDay */,
 				04F86ED324D9456E00C29B51 /* Seven */,
 				04F86ECC24D9381500C29B51 /* SixDay */,
@@ -173,6 +176,14 @@
 				04EC17F424D5740D00DA4EC0 /* OneDay */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		0444827024DA5105000F54B9 /* NineDay */ = {
+			isa = PBXGroup;
+			children = (
+				0444827124DA511E000F54B9 /* YPImageScollerController.swift */,
+			);
+			path = NineDay;
 			sourceTree = "<group>";
 		};
 		04DAA11924D7A42C00A0723E /* FourDay */ = {
@@ -758,6 +769,7 @@
 				63FC26222292A9D60015556C /* YPLoginController.swift in Sources */,
 				04F86EC524D90B0B00C29B51 /* YPFiveDayController.swift in Sources */,
 				638A015A229289E30095FB27 /* AppDelegate.swift in Sources */,
+				0444827224DA511E000F54B9 /* YPImageScollerController.swift in Sources */,
 				04EC17F124D566FD00DA4EC0 /* YPTwoDayController.swift in Sources */,
 				51D0933522A2D5800026EE41 /* YPReachabilityTool.swift in Sources */,
 				04F86ECE24D9382F00C29B51 /* YPFindLocalController.swift in Sources */,

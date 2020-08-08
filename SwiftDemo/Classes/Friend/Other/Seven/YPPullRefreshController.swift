@@ -45,6 +45,8 @@ class YPPullRefreshController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "第7天练习"
+
         self.view.addSubview(self.tableView)
         if #available(iOS 10.0, *) {
             self.tableView.refreshControl = self.headerRefresh

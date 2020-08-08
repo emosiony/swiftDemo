@@ -24,7 +24,7 @@ class YPFriendViewController: YPMineViewController {
         YPFindLocalController(),
         YPPullRefreshController(),
         YPRandomMusicController(),
-        
+        YPImageScollerController(),
     ]
     
 
@@ -33,8 +33,8 @@ class YPFriendViewController: YPMineViewController {
 
         self.navigationItem.title = "三十天练习"
         
-        for num in 0...30 {
-            dataList.append("第 \(num+1) 天");
+        for num in 1...30 {
+            dataList.append("第 \(num) 天");
         }
 
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonItem.SystemItem.play, target: self, action: #selector(settingClick(sender:)))

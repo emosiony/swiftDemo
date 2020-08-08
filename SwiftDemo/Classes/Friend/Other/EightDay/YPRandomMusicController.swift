@@ -16,6 +16,35 @@ class YPRandomMusicController: UIViewController {
     let gradientLayer = CAGradientLayer()
     
     var timer: Timer?
+    var playURL: URL?
+    
+    var totalTimer: Float = 0.0
+
+    lazy var progressHUD: UIProgressView = {
+        
+        let progress = UIProgressView(progressViewStyle: UIProgressView.Style.default)
+        progress.backgroundColor = HEXColor(h: 0x666666)
+        progress.progressTintColor = HEXColor(h: 0x123456)
+        progress.layer.cornerRadius = 2.0
+        progress.clipsToBounds = true
+        return progress
+    }()
+    
+    lazy var currentTimerLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 12)
+        label.textColor = UIColor.white;
+        label.text = "00:00"
+        return label
+    }()
+    
+    lazy var totalTimerLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 12)
+        label.textColor = UIColor.white;
+        label.text = "00:00"
+        return label
+    }()
     
     var backgroundColor: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)! {
         
@@ -61,9 +90,39 @@ class YPRandomMusicController: UIViewController {
         
         self.view.addSubview(self.playButton)
         
+        self.view.addSubview(self.currentTimerLabel)
+        self.view.addSubview(self.progressHUD)
+        self.view.addSubview(self.totalTimerLabel)
+        
         self.playButton.snp.makeConstraints { (make) in
             make.center.equalToSuperview()
         }
+        
+        self.currentTimerLabel.snp_makeConstraints { (make) in
+            make.left.equalTo(30)
+            make.top.equalTo(self.playButton.snp_bottom).offset(35)
+            make.height.equalTo(15);
+        }
+        
+        self.totalTimerLabel.snp_makeConstraints { (make) in
+            make.right.equalTo(-30)
+            make.top.equalTo(self.currentTimerLabel.snp_top)
+            make.height.equalTo(15);
+        }
+        
+        self.progressHUD.snp_makeConstraints { (make) in
+            make.left.equalTo(self.currentTimerLabel.snp_right).offset(10)
+            make.centerY.equalTo(self.currentTimerLabel)
+            make.right.equalTo(self.totalTimerLabel.snp_left).offset(-10)
+            make.height.equalTo(4)
+        }
+        
+        playURL = URL(fileURLWithPath: Bundle.main.path(forResource: "Ecstasy", ofType: "mp3")!)
+        let audioAsset = AVURLAsset(url: playURL!, options: nil)
+        let audioDuration = audioAsset.duration
+        totalTimer = Float(CMTimeGetSeconds(audioDuration))
+        
+        self.setTimerString(label: self.totalTimerLabel, time: Int(totalTimer))
     }
     
     @objc func playClick() {
@@ -72,16 +131,18 @@ class YPRandomMusicController: UIViewController {
             self.audioPlayer.stop()
             timer?.invalidate()
             timer = nil
+            self.currentTimerLabel.text = "00:00"
+            self.progressHUD.progress   = 0.0
             return
         }
         
-        let bgMusic = URL(fileURLWithPath: Bundle.main.path(forResource: "Ecstasy", ofType: "mp3")!)
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
-            try AVAudioSession.sharedInstance().setActive(true, options: AVAudioSession.SetActiveOptions.init())
-            try audioPlayer = AVAudioPlayer(contentsOf: bgMusic)
-            audioPlayer.delegate = self
             
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+            try AVAudioSession.sharedInstance().setActive(true, options: AVAudioSession.SetActiveOptions.notifyOthersOnDeactivation)
+            try audioPlayer = AVAudioPlayer(contentsOf: playURL!)
+            audioPlayer.delegate = self
+
             audioPlayer.prepareToPlay()
             audioPlayer.play()
         } catch let error {
@@ -101,8 +162,29 @@ class YPRandomMusicController: UIViewController {
         let greenValue = CGFloat(drand48())
         
         backgroundColor = (redValue, blueValue, greenValue, 1)
+        
+        DispatchQueue.main.async {
+            print("\(self.audioPlayer.currentTime) \n\(self.totalTimer)")
+            
+            let progress = Float(self.audioPlayer.currentTime) / self.totalTimer
+            self.progressHUD.progress = progress
+            
+            self.setTimerString(label: self.currentTimerLabel, time: Int(self.audioPlayer.currentTime))
+        }
     }
     
+    func setTimerString(label: UILabel, time: Int) {
+        
+        let hour   = Int(time / (60*60))
+        let minute = Int(time % (60*60) / 60)
+        let second = Int(time % 60)
+        
+        let hourStr   = hour > 0 ? String(format: "%02d:", hour) : ""
+        let minuteStr = String(format: "%02d:", minute)
+        let secondStr = String(format: "%02d", second)
+
+        label.text = String(format: "%@%@%@", hourStr, minuteStr, secondStr)
+    }
 
     deinit {
         if (self.timer != nil) {
