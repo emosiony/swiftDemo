@@ -31,6 +31,12 @@
 	<string>Where are you?</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Allow to use location and can send it to me</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>App需使用您保存图片的权限，若拒绝，将不能保存图片到相册。</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App需要使用你的相册，进行鉴定、微拍、微店的发布以及修改图片，若拒绝，将不能使用相册。</string>
+	<key>PHPhotoLibraryPreventAutomaticLimitedAccessAlert</key>
+	<true/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Gaspar Regular.otf</string>

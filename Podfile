@@ -19,6 +19,8 @@ target 'SwiftDemo' do
 #  pod 'Koyomi'           # 日历
 #  pod 'TextAttributes'   # AttributeString
 
+  pod 'NMapsMap'
+
   target 'SwiftDemoTests' do
     inherit! :search_paths
     # Pods for testing

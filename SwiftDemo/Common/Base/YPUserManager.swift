@@ -94,11 +94,18 @@ class YPUserManager: NSObject {
             
             
             let tabbarController = UITabBarController()
-            tabbarController.tabBar.barTintColor = UIColor.white
+            tabbarController.tabBar.barTintColor  = UIColor.white
             tabbarController.tabBar.isTranslucent = false
-            tabbarController.tabBar.tintColor = UIColor(red: 0.49, green: 0.67, blue: 0.93, alpha: 1)
-//            tabbarController.tabBar.tintColor = UIColor(red: 0.49, green: 0.67, blue: 0.93, alpha: 1)
+            tabbarController.tabBar.tintColor     = UIColor.red
+                   
             tabbarController.viewControllers = [nav, friend, find, mine]
+            
+//            for item in tabbarController.viewControllers! {
+//                // 修改标签栏选中时文字颜色
+//                item.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.red], for: .selected)
+//                // 修改标签栏未选中时文字颜色
+//                item.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.green], for: .normal)
+//            }
             
             appDelegate.window?.rootViewController = tabbarController
         } else {

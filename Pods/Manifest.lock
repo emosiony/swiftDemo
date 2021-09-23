@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.9.1)
   - Hue (5.0.0)
+  - NMapsMap (3.12.0)
   - Onboard (2.3.3)
   - ReachabilitySwift (5.0.0)
   - SnapKit (4.2.0)
@@ -8,6 +9,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Hue
+  - NMapsMap
   - Onboard
   - ReachabilitySwift
   - SnapKit
@@ -16,6 +18,7 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Hue
+    - NMapsMap
     - Onboard
     - ReachabilitySwift
     - SnapKit
@@ -23,10 +26,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
+  NMapsMap: b04a3439eac78e52f48cb5a9e4ab994be1bcfc80
   Onboard: 4d6e943e20bdd6bc229df967a347dd7514bc2a6f
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 30384c608d186940d6241ba3d7d9cafa914c7eca
+PODFILE CHECKSUM: 8cc0a5556dba91c6d09c2c47274bb9a536fa118a
 
 COCOAPODS: 1.9.1
